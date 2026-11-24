@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F2EEEB"/><stop offset="1" stop-color="#E7DCD8"/></linearGradient>
+</defs>
+<rect width="900" height="1200" fill="url(#bg)"/>
+<g fill="none" stroke="#6E1F33" stroke-opacity="0.28" stroke-width="2">
+<path d="M639 1298 Q757 306 643 0"/>
+<path d="M108 1243 Q271 213 407 0"/>
+<path d="M735 1380 Q700 133 700 0"/>
+<path d="M796 1384 Q941 238 730 0"/>
+<path d="M82 1325 Q129 431 159 148"/>
+<path d="M613 1394 Q563 281 686 0"/>
+</g>
+<g fill="#C9A3AE" fill-opacity="0.75">
+<circle cx="456" cy="268" r="8"/>
+<circle cx="519" cy="868" r="4"/>
+<circle cx="362" cy="515" r="6"/>
+<circle cx="215" cy="510" r="4"/>
+<circle cx="395" cy="873" r="8"/>
+<circle cx="300" cy="693" r="10"/>
+<circle cx="434" cy="464" r="8"/>
+<circle cx="424" cy="394" r="4"/>
+<circle cx="734" cy="698" r="10"/>
+<circle cx="301" cy="860" r="5"/>
+<circle cx="476" cy="683" r="5"/>
+<circle cx="278" cy="679" r="8"/>
+<circle cx="409" cy="713" r="10"/>
+<circle cx="375" cy="736" r="10"/>
+<circle cx="392" cy="278" r="9"/>
+<circle cx="283" cy="459" r="6"/>
+<circle cx="699" cy="856" r="5"/>
+<circle cx="544" cy="403" r="10"/>
+</g>
+</svg>

@@ -1,0 +1,91 @@
+/* ==========================================================================
+   contact-dock.css — плавающий док контактов (главная и магазин).
+   Не перекрывает кнопки корзины, поля формы и подвал: сдвинут от края,
+   учитывает safe-area, прячется, когда открыт диалог.
+   ========================================================================== */
+
+.contact-dock {
+  position: fixed;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: calc(16px + env(safe-area-inset-bottom));
+  z-index: 55;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.92);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--border-subtle);
+  transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
+}
+
+.dock-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 14px;
+  border-radius: var(--radius-pill);
+  color: var(--text-dark);
+  font-size: 13px;
+  transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+
+.dock-btn:hover {
+  background: var(--bg-sand-light);
+  color: var(--text-dark);
+}
+
+.dock-btn--main {
+  background: var(--bg-olive);
+  color: var(--text-light);
+}
+
+.dock-btn--main:hover {
+  background: var(--bg-olive-hover);
+  color: var(--text-light);
+}
+
+.dock-btn__label {
+  white-space: nowrap;
+}
+
+/* Диалоги (корзина, заказ, карточка) перекрывают док — убираем его. */
+body:has(dialog[open]) .contact-dock {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px);
+}
+
+/* На узких экранах док не спорит с контентом: только иконки и звонок. */
+@media (max-width: 560px) {
+  .contact-dock {
+    right: max(12px, env(safe-area-inset-right));
+    bottom: calc(12px + env(safe-area-inset-bottom));
+    gap: 6px;
+    padding: 6px;
+  }
+
+  .dock-btn {
+    padding: 0 12px;
+  }
+
+  .dock-btn__label {
+    display: none;
+  }
+
+  .dock-btn--main .dock-btn__label {
+    display: inline;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-dock {
+    transition: none;
+  }
+}

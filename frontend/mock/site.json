@@ -1,0 +1,32 @@
+{
+  "brand": "Milagro",
+  "brand_sub": "цветочная студия, Сургут",
+  "hero_slides": [
+    {
+      "image_url": "assets/photos/hero-1.jpg",
+      "mobile_image_url": "assets/photos/hero-1.jpg",
+      "alt": "Композиции в коробках Milagro на мраморном столе"
+    },
+    {
+      "image_url": "assets/photos/hero-2.jpg",
+      "mobile_image_url": "assets/photos/hero-2.jpg",
+      "alt": "Букет в розовой упаковке"
+    },
+    {
+      "image_url": "assets/photos/hero-3.jpg",
+      "mobile_image_url": "assets/photos/hero-3.jpg",
+      "alt": "Композиция в шляпной коробке с гортензией"
+    },
+    {
+      "image_url": "assets/photos/hero-4.jpg",
+      "mobile_image_url": "assets/photos/hero-4.jpg",
+      "alt": "Розовый букет с розами и хризантемами"
+    },
+    {
+      "image_url": "assets/photos/hero-5.jpg",
+      "mobile_image_url": "assets/photos/hero-5.jpg",
+      "alt": "Бело-розовый букет с хризантемами"
+    }
+  ],
+  "offers_image_url": "assets/photos/offers.jpg"
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Магазин — Milagro, цветочная студия в Сургуте</title>
+  <meta name="description" content="Каталог цветочной студии Milagro: букеты, свежие цветы и сухоцветы с составом и ценой. Самовывоз на Набережном, 2 и доставка по городу.">
+  <meta name="theme-color" content="#6E1F33">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon-180.png">
+  <link rel="stylesheet" href="css/fonts.css?v=12">
+  <link rel="stylesheet" href="css/styles.css?v=12">
+  <link rel="stylesheet" href="css/sunlight.css?v=12">
+  <link rel="stylesheet" href="css/market.css?v=12">
+  <link rel="stylesheet" href="css/contact-dock.css?v=12">
+</head>
+<body class="page-shop">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header data-site-header class="site-header"></header>
+
+  <main id="main">
+    <div class="container page-head">
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="index.html">Главная</a>
+        <span class="breadcrumbs__sep" aria-hidden="true">/</span>
+        <span aria-current="page">Магазин</span>
+      </nav>
+      <h1 class="h-section page-head__title" data-shop-title>Магазин</h1>
+      <p class="muted" data-shop-subtitle>Букеты, свежие цветы и сухоцветы студии Milagro.</p>
+    </div>
+
+    <div class="container shop-layout">
+      <aside class="filters" aria-label="Фильтры каталога">
+        <div class="filters__head">
+          <h2 class="filters__title">Фильтры</h2>
+          <button class="filters__close icon-btn" type="button" data-filters-close aria-label="Закрыть фильтры">
+            <span class="icon icon--close" aria-hidden="true"></span>
+          </button>
+        </div>
+        <form class="filters__form" data-filters>
+          <fieldset class="filters__group">
+            <legend class="filters__legend">Категория</legend>
+            <div class="filters__chips" data-filter-categories></div>
+          </fieldset>
+
+          <fieldset class="filters__group">
+            <legend class="filters__legend">Цена, ₽</legend>
+            <div class="filters__range">
+              <label class="filters__range-item">
+                <span class="sr-only">Цена от</span>
+                <input class="field__input" id="filter-price-min" name="price_min" type="number" inputmode="numeric" min="0" step="100" placeholder="от">
+              </label>
+              <span class="filters__range-dash" aria-hidden="true">—</span>
+              <label class="filters__range-item">
+                <span class="sr-only">Цена до</span>
+                <input class="field__input" id="filter-price-max" name="price_max" type="number" inputmode="numeric" min="0" step="100" placeholder="до">
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="filters__group">
+            <legend class="filters__legend">Состав</legend>
+            <div class="filters__checks" data-filter-flowers></div>
+          </fieldset>
+
+          <fieldset class="filters__group">
+            <legend class="filters__legend">Размер</legend>
+            <div class="filters__chips" data-filter-sizes></div>
+          </fieldset>
+
+          <fieldset class="filters__group">
+            <legend class="filters__legend">Получение</legend>
+            <div class="filters__radios">
+              <label class="checkbox"><input type="radio" name="fulfilment" value="all" checked><span>Все товары</span></label>
+              <label class="checkbox"><input type="radio" name="fulfilment" value="delivery"><span>Можно доставить</span></label>
+              <label class="checkbox"><input type="radio" name="fulfilment" value="pickup"><span>Самовывоз из студии</span></label>
+            </div>
+          </fieldset>
+
+          <button class="btn btn--outline btn--block btn--sm" type="reset" data-filters-reset>Сбросить фильтры</button>
+        </form>
+      </aside>
+
+      <section class="shop-main" aria-label="Товары">
+        <div class="shop-toolbar">
+          <label class="search">
+            <span class="icon icon--search" aria-hidden="true"></span>
+            <span class="sr-only">Поиск по каталогу</span>
+            <input class="search__input" id="shop-search" type="search" placeholder="Поиск по названию" autocomplete="off">
+          </label>
+          <div class="shop-toolbar__right">
+            <label class="sort">
+              <span class="sort__label">Сортировка</span>
+              <select class="field__select sort__select" id="shop-sort">
+                <option value="default">По умолчанию</option>
+                <option value="price-asc">Сначала дешевле</option>
+                <option value="price-desc">Сначала дороже</option>
+                <option value="new">Сначала новые</option>
+              </select>
+            </label>
+            <button class="btn btn--outline btn--sm filters-toggle" type="button" data-filters-toggle aria-expanded="false" aria-controls="filters">Фильтры</button>
+          </div>
+        </div>
+
+        <p class="shop-count muted" data-shop-count role="status" aria-live="polite"></p>
+
+        <div class="product-grid" data-shop-grid>
+          <noscript>
+            <p class="empty-state">Каталог подгружается скриптом. Чтобы узнать наличие и цену, позвоните: +7 922 446-10-68.</p>
+          </noscript>
+        </div>
+
+        <p class="empty-state" data-shop-empty hidden>По этим фильтрам ничего не нашлось. Сбросьте фильтры или позвоните — подберём букет по телефону.</p>
+
+        <div class="shop-more" data-shop-more hidden>
+          <button class="btn btn--outline" type="button" data-shop-more-btn>Показать ещё</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Карточка товара -->
+    <dialog id="detail" class="dialog" aria-labelledby="detail-title" data-detail>
+      <div class="dialog__panel detail" data-detail-panel></div>
+    </dialog>
+
+    <!-- Корзина -->
+    <dialog id="cart" class="dialog cart-dialog" aria-labelledby="cart-title" data-cart>
+      <div class="dialog__panel cart" data-cart-panel></div>
+    </dialog>
+
+    <!-- Оформление заказа -->
+    <dialog id="order" class="dialog order-dialog" aria-labelledby="order-title" data-order>
+      <div class="dialog__panel order" data-order-panel></div>
+    </dialog>
+
+    <!-- Экран успеха -->
+    <dialog id="success" class="dialog success-dialog" aria-labelledby="success-title" data-success>
+      <div class="dialog__panel success" data-success-panel></div>
+    </dialog>
+
+    <div id="admin" class="admin" hidden></div>
+  </main>
+
+  <footer data-site-footer class="site-footer site-footer--light"></footer>
+  <div data-contact-dock></div>
+
+  <script src="js/api.js?v=12"></script>
+  <script src="js/app.js?v=12"></script>
+  <script src="js/contact-dock.js?v=12"></script>
+  <script src="js/market.js?v=12"></script>
+  <script src="js/admin.js?v=12"></script>
+</body>
+</html>

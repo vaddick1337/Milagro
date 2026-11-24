@@ -1,0 +1,174 @@
+{
+  "orders": [
+    {
+      "id": "T-1001",
+      "number": "T-1001",
+      "created_at": "2026-11-24T10:12:00+05:00",
+      "payment_status": "succeeded",
+      "delivery_method": "delivery",
+      "customer": {
+        "name": "Тестовый покупатель",
+        "phone": "+7 900 000-00-00",
+        "email": "test@example.com"
+      },
+      "items": [
+        {
+          "product_id": "p-01",
+          "title": "Букет «Северный шёлк»",
+          "quantity": 1,
+          "price": 5900,
+          "image_url": "assets/photos/p-01.svg",
+          "image_alt": "Букет «Северный шёлк» с розами и эустомой"
+        }
+      ],
+      "goods_total": 5900,
+      "delivery_price": null,
+      "total": 5900,
+      "comment": "",
+      "consents": {
+        "data_consent": true,
+        "offer_accepted": true,
+        "data_consent_at": "2026-11-24T10:12:00+05:00",
+        "offer_accepted_at": "2026-11-24T10:12:00+05:00",
+        "consent_version": "draft",
+        "privacy_version": "draft",
+        "offer_version": "draft"
+      },
+      "archived": false,
+      "delivery_zone": "z-city",
+      "address": "г. Сургут, ул. Тестовая, 1, кв. 1 (тестовый адрес)",
+      "delivery_date": "2026-11-25",
+      "delivery_slot": "12:30–13:30",
+      "same_recipient": true,
+      "recipient_phone": "+7 900 000-00-00"
+    },
+    {
+      "id": "T-1002",
+      "number": "T-1002",
+      "created_at": "2026-11-24T12:40:00+05:00",
+      "payment_status": "pending",
+      "delivery_method": "surprise",
+      "customer": {
+        "name": "Тестовый покупатель",
+        "phone": "+7 900 000-00-00",
+        "email": "test@example.com"
+      },
+      "items": [
+        {
+          "product_id": "p-02",
+          "title": "Букет «Брусника»",
+          "quantity": 1,
+          "price": 7400,
+          "image_url": "assets/photos/p-02.svg",
+          "image_alt": "Букет «Брусника» с розами и гортензией"
+        },
+        {
+          "product_id": "p-14",
+          "title": "Сухоцветы «Поле»",
+          "quantity": 1,
+          "price": 3200,
+          "image_url": "assets/photos/p-14.svg",
+          "image_alt": "Сухоцветы «Поле»"
+        }
+      ],
+      "goods_total": 10600,
+      "delivery_price": null,
+      "total": 10600,
+      "comment": "Тестовая подсказка: домофон 12, позвонить заранее",
+      "consents": {
+        "data_consent": true,
+        "offer_accepted": true,
+        "data_consent_at": "2026-11-24T12:40:00+05:00",
+        "offer_accepted_at": "2026-11-24T12:40:00+05:00",
+        "consent_version": "draft",
+        "privacy_version": "draft",
+        "offer_version": "draft"
+      },
+      "archived": false,
+      "delivery_zone": "s-city",
+      "address": "",
+      "delivery_date": "2026-11-26",
+      "delivery_slot": "17:30–18:30",
+      "same_recipient": false,
+      "recipient_phone": "+7 900 000-00-01"
+    },
+    {
+      "id": "T-1003",
+      "number": "T-1003",
+      "created_at": "2026-11-23T16:05:00+05:00",
+      "payment_status": "canceled",
+      "delivery_method": "pickup",
+      "customer": {
+        "name": "Тестовый покупатель",
+        "phone": "+7 900 000-00-00",
+        "email": "test@example.com"
+      },
+      "items": [
+        {
+          "product_id": "p-09",
+          "title": "Роза «Прима», 51 шт.",
+          "quantity": 1,
+          "price": 11900,
+          "image_url": "assets/photos/p-09.svg",
+          "image_alt": "Роза «Прима», 51 шт."
+        }
+      ],
+      "goods_total": 11900,
+      "delivery_price": null,
+      "total": 11900,
+      "comment": "",
+      "consents": {
+        "data_consent": true,
+        "offer_accepted": true,
+        "data_consent_at": "2026-11-23T16:05:00+05:00",
+        "offer_accepted_at": "2026-11-23T16:05:00+05:00",
+        "consent_version": "draft",
+        "privacy_version": "draft",
+        "offer_version": "draft"
+      },
+      "archived": false,
+      "pickup_branch": "b1",
+      "delivery_date": "2026-11-24",
+      "delivery_slot": "13:00–14:00"
+    },
+    {
+      "id": "T-1004",
+      "number": "T-1004",
+      "created_at": "2026-11-22T09:20:00+05:00",
+      "payment_status": "mismatch",
+      "delivery_method": "pickup",
+      "customer": {
+        "name": "Тестовый покупатель",
+        "phone": "+7 900 000-00-00",
+        "email": "test@example.com"
+      },
+      "items": [
+        {
+          "product_id": "p-16",
+          "title": "Стабилизированная роза в колбе",
+          "quantity": 1,
+          "price": 4700,
+          "image_url": "assets/photos/p-16.svg",
+          "image_alt": "Стабилизированная роза в колбе"
+        }
+      ],
+      "goods_total": 4700,
+      "delivery_price": null,
+      "total": 4700,
+      "comment": "",
+      "consents": {
+        "data_consent": true,
+        "offer_accepted": true,
+        "data_consent_at": "2026-11-22T09:20:00+05:00",
+        "offer_accepted_at": "2026-11-22T09:20:00+05:00",
+        "consent_version": "draft",
+        "privacy_version": "draft",
+        "offer_version": "draft"
+      },
+      "archived": false,
+      "pickup_branch": "b1",
+      "delivery_date": "2026-11-23",
+      "delivery_slot": "11:00–12:00"
+    }
+  ]
+}

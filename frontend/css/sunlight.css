@@ -1,0 +1,84 @@
+/* ==========================================================================
+   sunlight.css — два декоративных слоя поверх фона.
+   1) Ветки брусники тонкой линией (SVG из assets/) — не обрублены краем:
+      слой fixed и растянут на весь вьюпорт, ниже 768 px крупный SVG
+      выключается и остаются только мелкие точки.
+   2) «Свет из окна» — мягкие тени листьев и холодно-тёплый градиент.
+   Оба слоя не перехватывают клики и не мешают читаемости текста.
+   ========================================================================== */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: url("../assets/floral-background.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    radial-gradient(1100px 680px at 76% -8%, rgba(217, 154, 62, 0.1), transparent 62%),
+    radial-gradient(900px 620px at 8% 88%, rgba(47, 74, 68, 0.07), transparent 66%),
+    linear-gradient(200deg, rgba(251, 248, 246, 0.35), transparent 45%);
+  mix-blend-mode: multiply;
+}
+
+/* Контент всегда выше декоративных слоёв. */
+main,
+.site-header,
+.site-footer {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 767px) {
+  body::before {
+    background-image: url("../assets/floral-background-mobile.svg");
+    background-size: 640px auto;
+    background-position: top center;
+    opacity: 0.6;
+  }
+
+  body::after {
+    background:
+      radial-gradient(620px 420px at 82% -6%, rgba(217, 154, 62, 0.09), transparent 64%),
+      linear-gradient(200deg, rgba(251, 248, 246, 0.28), transparent 55%);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) and (min-width: 1024px) {
+  /* Очень медленный «дыхательный» сдвиг света: только opacity, без layout. */
+  .sunlight-leaf {
+    position: fixed;
+    top: -6vh;
+    right: -4vw;
+    width: min(52vw, 720px);
+    height: auto;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.16;
+    filter: blur(0.4px);
+    animation: sunlight-breathe 9s var(--ease) infinite alternate;
+  }
+
+  @keyframes sunlight-breathe {
+    from { opacity: 0.1; }
+    to { opacity: 0.19; }
+  }
+}
+
+@media (min-width: 1024px) and (prefers-reduced-motion: reduce) {
+  .sunlight-leaf {
+    display: none;
+  }
+}

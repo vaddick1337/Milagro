@@ -1,0 +1,149 @@
+{
+  "zones": [
+    {
+      "id": "z-city",
+      "name": "По городу",
+      "price": null,
+      "price_note": "стоимость уточняется"
+    }
+  ],
+  "surprise_zones": [
+    {
+      "id": "s-city",
+      "name": "Сюрприз по городу",
+      "price": null,
+      "price_note": "стоимость уточняется"
+    }
+  ],
+  "free_from": null,
+  "free_from_note": "порог бесплатной доставки уточняется у владельца",
+  "pickup": [
+    {
+      "id": "b1",
+      "name": "Студия на Набережном",
+      "short": "пр-т Набережный, 2",
+      "address": "г. Сургут, пр-т Набережный, 2",
+      "details": "1 этаж",
+      "hours": "Ежедневно 10:00–20:00",
+      "phone": "+7 922 446-10-68"
+    }
+  ],
+  "payment_mode": "test",
+  "slots": [
+    {
+      "start": "09:30",
+      "minutes": 60,
+      "label": "09:30–10:30"
+    },
+    {
+      "start": "10:30",
+      "minutes": 60,
+      "label": "10:30–11:30"
+    },
+    {
+      "start": "11:30",
+      "minutes": 60,
+      "label": "11:30–12:30"
+    },
+    {
+      "start": "12:30",
+      "minutes": 60,
+      "label": "12:30–13:30"
+    },
+    {
+      "start": "13:30",
+      "minutes": 60,
+      "label": "13:30–14:30"
+    },
+    {
+      "start": "14:30",
+      "minutes": 60,
+      "label": "14:30–15:30"
+    },
+    {
+      "start": "15:30",
+      "minutes": 60,
+      "label": "15:30–16:30"
+    },
+    {
+      "start": "16:30",
+      "minutes": 60,
+      "label": "16:30–17:30"
+    },
+    {
+      "start": "17:30",
+      "minutes": 60,
+      "label": "17:30–18:30"
+    },
+    {
+      "start": "18:30",
+      "minutes": 60,
+      "label": "18:30–19:30"
+    },
+    {
+      "start": "19:30",
+      "minutes": 60,
+      "label": "19:30–20:30"
+    }
+  ],
+  "pickup_slots": [
+    {
+      "start": "09:00",
+      "minutes": 60,
+      "label": "09:00–10:00"
+    },
+    {
+      "start": "10:00",
+      "minutes": 60,
+      "label": "10:00–11:00"
+    },
+    {
+      "start": "11:00",
+      "minutes": 60,
+      "label": "11:00–12:00"
+    },
+    {
+      "start": "12:00",
+      "minutes": 60,
+      "label": "12:00–13:00"
+    },
+    {
+      "start": "13:00",
+      "minutes": 60,
+      "label": "13:00–14:00"
+    },
+    {
+      "start": "14:00",
+      "minutes": 60,
+      "label": "14:00–15:00"
+    },
+    {
+      "start": "15:00",
+      "minutes": 60,
+      "label": "15:00–16:00"
+    },
+    {
+      "start": "16:00",
+      "minutes": 60,
+      "label": "16:00–17:00"
+    },
+    {
+      "start": "17:00",
+      "minutes": 60,
+      "label": "17:00–18:00"
+    },
+    {
+      "start": "18:00",
+      "minutes": 60,
+      "label": "18:00–19:00"
+    },
+    {
+      "start": "19:00",
+      "minutes": 60,
+      "label": "19:00–20:00"
+    }
+  ],
+  "booking_days": 60,
+  "lead_minutes": 60,
+  "timezone": "Asia/Yekaterinburg"
+}
